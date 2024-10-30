@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main(){
     //Area of Square and Reactangle
-    // int sideOfSquare =5;
-    // int length =4, breadth =5;
-    // int AreaOfSqure = sideOfSquare*sideOfSquare;
-    // printf("Area of Square: %d\n", AreaOfSqure);
-    // int AreaOfRectangle = length*breadth;
-    // printf("Area of Rectangle: %d\n", AreaOfRectangle);
+    int sideOfSquare =5;
+    int length =4, breadth =5;
+    int AreaOfSqure = sideOfSquare*sideOfSquare;
+    printf("Area of Square: %d\n", AreaOfSqure);
+    int AreaOfRectangle = length*breadth;
+    printf("Area of Rectangle: %d\n", AreaOfRectangle);
 
 
     // 2- WAP to find the next Multiple of 10
@@ -20,11 +20,11 @@ int main(){
     // printf("The previous Multiple of %d is %d",Num,previousMultiple);
 
     //4- Multiple of 10 if greater than or equal to 5 then find the next Multiple of Given number
-    int num = 56;
-    int Lastdigit = num%10;
-    int currentNumber = num/10;
-    int res = (currentNumber*10) + (Lastdigit >= 5)*10;
-    printf("%d",res);
+    // int num = 56;
+    // int Lastdigit = num%10;
+    // int currentNumber = num/10;
+    // int res = (currentNumber*10) + (Lastdigit >= 5)*10;
+    // printf("%d",res);
     // printf("%d",Lastdigit);
 
     //5 - 3 Digits reversed
