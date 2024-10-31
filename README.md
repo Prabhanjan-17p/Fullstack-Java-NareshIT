@@ -11,6 +11,7 @@ canva : for design
 spLine : for 3D design 
 
 🌐 Frontend Development:
+
 HTML & CSS: Build and style web pages with essential web technologies.
 JavaScript & Advanced JavaScript: Make your pages interactive and user-friendly.
 Bootstrap: Design responsive layouts that adapt seamlessly to any device.
