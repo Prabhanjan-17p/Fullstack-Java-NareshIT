@@ -1,19 +1,23 @@
 # Fullstack-Java-NareshIT
  
-NareshIT Fullstack Java Course
+
 Welcome to the NareshIT Fullstack Java course! 🚀 This comprehensive program is designed to equip you with the skills to build robust, scalable, and dynamic web applications from scratch. Whether you're a beginner or looking to sharpen your skills, this course covers everything you need to become a proficient full-stack developer.
 
 🧑‍💻 What You'll Learn: 
 
 🖼️ Design
 Figma : For design
+
 canva : for design 
+
 spLine : for 3D design 
 
 🌐 Frontend Development:
 
    HTML & CSS: Build and style web pages with essential web technologies.
+   
    JavaScript & Advanced JavaScript: Make your pages interactive and user-friendly.
+   
    Bootstrap: Design responsive layouts that adapt seamlessly to any device.
 
 🖥️ Backend Development:
