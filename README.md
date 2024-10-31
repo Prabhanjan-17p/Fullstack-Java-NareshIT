@@ -12,9 +12,12 @@ spLine : for 3D design
 
 🌐 Frontend Development:
 
-HTML & CSS: Build and style web pages with essential web technologies.
-JavaScript & Advanced JavaScript: Make your pages interactive and user-friendly.
-Bootstrap: Design responsive layouts that adapt seamlessly to any device.
+   HTML & CSS: Build and style web pages with essential web technologies.
+
+   JavaScript & Advanced JavaScript: Make your pages interactive and user-friendly.
+
+   Bootstrap: Design responsive layouts that adapt seamlessly to any device.
+
 🖥️ Backend Development:
 C: Get a strong foundation in programming.
 Java, Core Java, & Advanced Java: Master the power of Java to build the backend of your applications.
