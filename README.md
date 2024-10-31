@@ -13,20 +13,27 @@ spLine : for 3D design
 🌐 Frontend Development:
 
    HTML & CSS: Build and style web pages with essential web technologies.
-
    JavaScript & Advanced JavaScript: Make your pages interactive and user-friendly.
-
    Bootstrap: Design responsive layouts that adapt seamlessly to any device.
 
 🖥️ Backend Development:
+
 C: Get a strong foundation in programming.
+
 Java, Core Java, & Advanced Java: Master the power of Java to build the backend of your applications.
+
 🗄️ Database Management:
+
 MySQL: Learn database fundamentals and manage data efficiently.
+
 Workbench & Server: Explore practical database tools to organize and manipulate data.
+
 🧩 Framework:
+
 Spring & Spring Boot: Build secure, high-performance applications with ease and efficiency using industry-standard frameworks.
+
 📢 Follow My Progress and Updates:
+
 You can find updates, insights, and project highlights for this course on my social platforms:
 
 LinkedIn: https://www.linkedin.com/in/pravanjan-17p/
