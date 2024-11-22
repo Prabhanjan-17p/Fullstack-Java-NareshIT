@@ -27,8 +27,7 @@ int num1, num2, num3;
 
     scanf("%d %d %d", &num1, &num2, &num3);
     printf("%d= num1  %d= num2 %d= num3", num1, num2, num3);
+    // dqwjhgdjq    
 
-
-    
     return 0;
 }
