@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naresh i Technologies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+      font-size: 24px;
+      background-color: #ffeb3b;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Naresh i Technologies</h1>
+    <a class="btn" href="login.html">Login</a>
+    <a class="btn" href="register.html">Register</a>
+  </div>
+</body>
+
+</html>
+
+<!--  
+NOTE - Default functionality available for submit & reset buttons only in HTML
+
+The value of action attribute is execute whenever submit button is clicked
+
+All the fields data erased whenever reset button is clicked.
+
+There are 7 http methods:
+    1- GET
+    2- POST
+    3- PUT
+    4- HEAD
+    5- DELETE
+    6- OPTIONS
+    7- TRACE
+
+Default http method is GET.
+
+GET vs POST
+    GET
+        - It includes request parameters in a request header in packet.
+        - Here all request paramter are displayed in address bar.
+        - Here all request paramter are concatenated as one string(Query String) and passed to server.
+        - It is little bit fast.
+        - Here size of the data is limited.
+        - It not suitable for uploading file.
+        - Use GET method the is not Confidential.
+    
+    POST
+        - It include request paramter in request body in packet.
+        - Here request parameter are not display.
+        - Here request parameters are passed to server parameter to parameter
+        - It is slow as comapre to GET.
+        - Here size of the data is not limited.
+        - It suitable for uploading file also.
+        - Use POST method the is Confidential.
+
+There are 3 ways to write a servlet program(for Tomact v9.0 so used javax)
+    1- By implementing javax.servlet.Servlet Interface. 
+        => in this Interface 5 Abstract method are there. 
+            Those are 
+            public abstract void init(ServletConfig) throws ServletException;
+            public abstract javax.servlet.ServletConfig getServletConfig();
+            public abstract void service(ServletRequest, ServletResponse) throws ServletException, IOException;
+            public abstract java.lang.String getServletInfo();
+            public abstract void destroy();
+
+    2- By extending javax.servlet.GenericServlet class.  
+        => in this Interface 1 Abstract method are there.
+            Those are
+            public abstract void service(ServletRequest, ServletResponse) throws ServletException, IOException;
+
+    3- By extending javax.servlet.http.HttpServlet class. 
+        Method
+            - protected void doGet(HttpServletRequest, HttpServletResponse) throws ServletException, IOException;
+            - protected void doPost(HttpServletRequestHttpServletResponse) throws ServletException, IOException;  
+            - protected void service(HttpServletRequest, HttpServletResponse) throws ServletException, IOException;
+            - public void service(ServletRequest, ServletResponse) throws ServletException, IOException;
+    
+*** GenericServlet vs HttpServlet
+    GenericServlet
+        - It is a protocol independent.
+        - It supports common services.
+            ex- Forwarding and including
+        - By using GenericServlet we can implement common services only.
+
+    HttpServlet
+        - It is http protocol dependent.    
+        - It support http specific services.
+            ex- Redirecting and Session Tracking.     
+        - By using HttpicServlet we can implement both common services and http specific servlet becuase HttpServlet is a sub class  of GenericServlet.            
+        
+        HttpServlet Method
+        ---------------------
+
+1. doGet()
+    - It handle GET type request only.
+    
+2. doPost()
+    - It handle POST type requsts only.
+
+3. service()        
+    - It handle both GET & POST type requests
+        
+
+    NOTE => Web Container call  service(SR,SR) ---(calls)---=>  service(HSR,HSR) 
+                                              (If the request type is GET then it call)  -------=> doGet()   
+                                              (If the request type is POST then it call) -------=> doPost()
+                                              
+          => service(SR,SR) --- Life cycle method.                                    
+          => service(HSR,HSR) --- Non Life cycle method.                                    
+
+To handle only Get type request, Override doGet() method:
+    doGet(HSR,HSR){
+        -------------
+        ------------
+    }                              
+    Only GET request will be work.
+
+To handle only POST type request, Override doPost() method:    
+    doPost(HSR,HSR){
+        -------------
+        ------------
+    }                              
+    Only POST request will be work.
+
+To handle both GET and POST type request and if the task is  same then override non life cycle servide() method:
+    service(HSR,HSR){
+        -------------
+        ------------
+    }                              
+    Both are executed GET & POST.
+  
+To handle both GET & POST type request and if the task is different then override both doGet() & doPost() method:
+    doGet(HSR,HSR){
+        -------------
+        ------------
+    } 
+    doPost(HSR,HSR){
+        -------------
+        ------------
+    } 
+
+The Object creation order by web-Container
+-------------------------------------------
+    1- ServletContext
+        => Servlet Context is created by web-container whenever web application is deployed on server.
+
+    2- User defined Servlet
+        => User defined Servlet Object is created by web-container whenever first request comes to a servlet. 
+        => This object is used by web-container to call life cycle method.
+
+    3- ServletConfig
+        => ServletConfig create by web-container whenever init() method call.
+        => init() method is called by web-container whenever first request comes to a servlet. 
+
+    4- ServletRequest & ServletResponse    
+        => ServletRequest & ServletResponse are created by web-container whenever service() method is call.
+        => service() method is call by web-container for every request.
+
+ServletRequest
+-----------------
+    => It is created by web-container for every request.
+    => It contains request paramater.
+    => It is used to retrive request parameter from HTML.
+ 
+    The Following method are used to get the request paramters:
+      1 public abstract String getParameter(String);
+      2 public abstract Enumeration<String> getParameterNames();
+      3 public abstract String[] getParameterValues(String);
+      4 public abstract java.util.Map<String, String[]> getParameterMap();
+                                 
+
+
+ -->

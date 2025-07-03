@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	
+	<bean id="CakeP1" class="com.nit.sbean.OrderCake"> <!-- target spring bean cfg -->
+		<constructor-arg name="cake_Flavour" value="vanilla" />
+		<constructor-arg name="cake_quantity" value="1.0" />
+		<constructor-arg name="shape_of_cake" value="round" />
+	</bean>
+	
+		<bean id="CakeP2" class="com.nit.sbean.OrderCake"> <!-- target spring bean cfg -->
+		<constructor-arg name="cake_Flavour" value="vanilla" />
+		<constructor-arg name="cake_quantity" value="2.0" />
+		<constructor-arg name="shape_of_cake" value="round" />
+		<constructor-arg name="message_on_cake" value="Happy birthday" /> 
+		
+	</bean>
+	<bean id="CakeP3" class="com.nit.sbean.OrderCake"/>
+
+</beans>

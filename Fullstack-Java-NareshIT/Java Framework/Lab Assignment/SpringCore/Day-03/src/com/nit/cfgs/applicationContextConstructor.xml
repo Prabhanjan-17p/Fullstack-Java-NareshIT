@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+
+
+    <bean id="studentCon" class="com.nit.sbean.StudentConstructor">
+        <constructor-arg name="student_name" value="kanha" />
+		<constructor-arg name="student_rollNo" value="123" />
+		<constructor-arg name="math_Marks" value="80" />
+		<constructor-arg name="physics_Marks" value="80" />
+		<constructor-arg name="chemistry_marks" value="80" />
+		<constructor-arg name="english_marks" value="80" />
+		<constructor-arg name="physicalEdu_marks" value="80" />
+		<constructor-arg name="isExamAttended" value="true" />
+    </bean>
+
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="studentP1" class="com.nit.sbean.Student"> <!-- target spring bean cfg -->
+		<property name="student_name" value="kanha" />
+		<property name="student_rollNo" value="123" />
+		<property name="math_Marks" value="80" />
+		<property name="physics_Marks" value="80" />
+		<property name="chemistry_marks" value="80" />
+		<property name="english_marks" value="80" />
+		<property name="physicalEdu_marks" value="80" />
+		<property name="isExamAttended" value="false" />
+	</bean>
+
+</beans>
