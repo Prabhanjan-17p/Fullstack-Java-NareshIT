@@ -1,0 +1,5 @@
+welcome.message=Bienvenue à Spring Internationalization !
+greeting.message=Bonjour {0}, bienvenue à {1} !
+form.label.name=Nom
+form.label.email=E-mail
+form.label.submit=Soumettre
