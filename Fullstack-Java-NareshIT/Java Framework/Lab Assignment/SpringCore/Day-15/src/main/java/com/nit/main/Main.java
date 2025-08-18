@@ -10,7 +10,7 @@ import com.nit.config.AppConfig;
 public class Main {
 	public static void main(String[] args) {
 		try (AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-				Scanner sc = new Scanner(System.in)) {
+			Scanner sc = new Scanner(System.in)) {
 			System.out.println("Enter  language code ::");
 			String lang = sc.next();
 
