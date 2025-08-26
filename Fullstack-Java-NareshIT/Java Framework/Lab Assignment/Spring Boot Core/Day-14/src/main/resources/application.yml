@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: Day-14
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: NTPSBMS718
