@@ -10,12 +10,12 @@ import com.nt.service.ServiceCenter;
 public class Day1502Application {
 
 	public static void main(String[] args) {
-		try (ConfigurableApplicationContext context = SpringApplication.run(Day1502Application.class, args);){
-		
-		ServiceCenter bean = context.getBean(ServiceCenter.class);
-		
-		bean.performService();
-		}catch (Exception e) {
+		try (ConfigurableApplicationContext context = SpringApplication.run(Day1502Application.class, args);) {
+
+			ServiceCenter bean = context.getBean(ServiceCenter.class);
+
+			bean.performService();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
